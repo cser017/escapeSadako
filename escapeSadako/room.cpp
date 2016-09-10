@@ -1,11 +1,10 @@
 //
 //  room.cpp
-//  escapeSadako
+//  homework 7
 //
 //  Created by Chen Cai on 7/28/15.
 //  Copyright (c) 2015 Chen Cai. All rights reserved.
 //
-
 
 #include "room.h"
 #include <set>
@@ -14,16 +13,9 @@
 #include <unordered_map>
 #include <iostream>
 
-using namespace std;
-
-#include <iostream>
-#include <string>
-#include <set>
-#include <unordered_map>
 
 using namespace std;
 
-#include "room.h"
 
 string Room::getName(){
     return name;
@@ -46,17 +38,39 @@ Room* Room::goToRoom(string direction){
 }
 
 void Room::printLinked(){
-    cout<<"Now you are in "<<getName()<<"."<<endl;
+    cout<<"Now you are in "<<getName()<<".\n"<<endl;
     if (!things.empty()) {
-        cout<<"\nThis room has following stuff:\n"<<"*******************************************************"<<endl;
+        cout<<"\nThis room has following stuff:\n"<<"***************************************************"<<endl;
         for (auto th:things){
-            cout<<th->getName()<<endl;
+            cout<<th->getName()<<"--"<<th->getDescription()<<endl;
         }
-        cout<<"*********************************************************"<<endl;
+        cout<<"******************************************************"<<endl;
     }
     cout<<"\nDerictions you can go: \n";
     for (auto r:map4room){
         cout<<r.first<<endl;
     }
+}
+void Room::printMonster(){
+    cout<<"\n\nSadako now is in "<<getName()<<".\n"<<endl;
+}
+
+void Room::enter(Agent *a)
+{
+    agents.insert(a);
+}
+void Room::leave(Agent *a)
+{
+    agents.erase(a);
+}
+bool Room::meet()
+{
+    if (agents.size()==2) {
+        return true;
+    }
+    else return false;
+}
+void Room::getThings(Thing* T){
+    things.insert(T);
 }
 

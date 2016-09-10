@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>801BE0FD-609C-45FC-9875-9D51E0E026AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>escapeSadako</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F5FCBE575A99CB6CBC94FB4435FA29F4F690770B</key>
+		<string>https://github.com/cser017/escapeSadako.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>escapeSadako.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F5FCBE575A99CB6CBC94FB4435FA29F4F690770B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cser017/escapeSadako.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F5FCBE575A99CB6CBC94FB4435FA29F4F690770B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F5FCBE575A99CB6CBC94FB4435FA29F4F690770B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>escapeSadako</string>
+		</dict>
+	</array>
+</dict>
+</plist>
